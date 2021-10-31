@@ -49,7 +49,6 @@ emails = [
     "an.example@test",
     "te#st@example.com",
     "test@exam!ple.com",
-    "moshe@walla.co.il",
     "MOSH@GMAIL.COM"
 ]
 
