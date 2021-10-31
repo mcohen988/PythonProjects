@@ -13,14 +13,11 @@ def is_valid(email):
     # Tuple unpacking - prefix, domain
     prefix, domain = email.split("@")
     
-    # Checking the domain and prefix for invalid characters 
     if has_invalid_characters(prefix):
         return False
     
     if has_invalid_characters(domain):
         return False
-
-    # Checking the length of prefix and domain for invalid syntax
 
     if len(prefix) == 0:
         return False
