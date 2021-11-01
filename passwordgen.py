@@ -1,12 +1,15 @@
 import random
+import string
 
-lower =  "abcdefghijklmnopqrstuvwxyz"
-upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-numbers = "0123456789"
-symbols = "[]{}()*;/,._-"
+alphabets =  list(string.ascii_letters)
+digits = list(string.digits)
+special_chars = list("!@#$%^&*()")
+all = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
-all = lower + upper + numbers + symbols
-length = int(input("Enter the length of your password"))
+alphabets_count = int(input("Enter the number of characters you want: "))
+digits_count = int(input("Enter the number of digits you want: "))
+special_chars_count = int(input("Enter the number of special characters you want: "))
+overall_count = alphabets_count + digits_count + special_chars_count
 
-password = "".join(random.sample(all, length)) 
+password = "".join(random.sample(all, overall_count)) 
 print(password)
