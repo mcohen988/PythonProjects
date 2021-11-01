@@ -1,6 +1,6 @@
 import random
 import string
-#import secrets
+import secrets  #used for generating cryptographically strong random numbers
 
 alphabets =  list(string.ascii_letters)
 digits = list(string.digits)
@@ -21,16 +21,16 @@ def gen_randon_password():
         
     password = []
         
-    # random.choice() returns a random element from the given sequence
+    # secrets.choice() method return a randomly-chosen element from the given sequence.
     
     for i in range(alphabets_count):
-        password.append(random.choice(alphabets))
+        password.append(secrets.choice(alphabets))
     
     for i in range(digits_count):
-        password.append(random.choice(digits))
+        password.append(secrets.choice(digits))
         
     for i in range(special_chars_count):
-        password.append(random.choice(special_chars))
+        password.append(secrets.choice(special_chars))
 
     # shuffle() takes a sequence and returns the sequence in a random order 
     random.shuffle(password)
