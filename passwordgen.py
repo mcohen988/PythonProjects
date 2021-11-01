@@ -4,7 +4,6 @@ import string
 alphabets =  list(string.ascii_letters)
 digits = list(string.digits)
 special_chars = list("!@#$%^&*()[].-")
-all = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
 def gen_randon_password():
     # Asking the user for password length
