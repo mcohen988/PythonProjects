@@ -26,14 +26,14 @@ def gen_randon_password():
     for i in range(alphabets_count):
         password.append(secrets.choice(alphabets))
     
-    for i in range(digits_count):
+    for n in range(digits_count):
         password.append(secrets.choice(digits))
         
-    for i in range(special_chars_count):
+    for s in range(special_chars_count):
         password.append(secrets.choice(special_chars))
 
-    # shuffle() takes a sequence and returns the sequence in a random order 
-    random.shuffle(password)
+    # Using the secrets.SystemRandom class, we can use all the functions of a random module
+    secrets.SystemRandom().shuffle(password)
     # printing the password
     print("".join(password))
 
