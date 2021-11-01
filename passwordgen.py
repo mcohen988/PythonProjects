@@ -3,7 +3,7 @@ import secrets  #used for generating cryptographically strong random numbers
 
 alphabets =  list(string.ascii_letters)
 digits = list(string.digits)
-special_chars = list("!@#$%^&*()[].-")
+special_chars = list("#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
 
 def gen_randon_password():
     # Asking the user for password length
