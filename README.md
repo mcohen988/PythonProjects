@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Moshe Johary</h1>
 <h3 align="center">A passionate learner from Israel</h3>
 
-- 🌱 I’m currently learning **Assembly, Python**
+- 🌱 I’m currently learning Assembly, Python
 
-- 👀 I’m interested in **Malware analysis, penteration testing, reverse engineering**
+- 👀 I’m interested in Malware analysis, penteration testing, reverse engineering
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
