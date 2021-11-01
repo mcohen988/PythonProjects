@@ -1,4 +1,3 @@
-import random
 import string
 import secrets  #used for generating cryptographically strong random numbers
 
