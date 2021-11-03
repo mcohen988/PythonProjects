@@ -1,4 +1,4 @@
-"""
+/*
 Some numbers have funny properties. For example:
 
     89 --> 8¹ + 9² = 89 * 1
@@ -17,7 +17,8 @@ In other words:
 
 If it is the case we will return k, if not return -1.
 
-Note: n and p will always be given as strictly positive integers."""
+Note: n and p will always be given as strictly positive integers.
+*/
 
 # Solution
 
