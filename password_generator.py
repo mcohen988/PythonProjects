@@ -4,8 +4,9 @@ import secrets  #used for generating cryptographically strong random numbers
 alphabets =  list(string.ascii_letters)
 digits = list(string.digits)
 special_chars = list("#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
+all = alphabets + digits + special_chars
 
-def gen_randon_password():
+def gen_random_password():
     # Asking the user for password length
     length = int(input("Enter password length: "))
     alphabets_count = int(input("Enter the number of characters you want: "))
@@ -15,7 +16,7 @@ def gen_randon_password():
     overall_count = alphabets_count + digits_count + special_chars_count
 
     if overall_count > length:
-        print("The overall count is greater than the length you choose.")
+        print("The overall count is greater than the length you've chosen.")
         return
         
     password = []
@@ -30,11 +31,17 @@ def gen_randon_password():
         
     for s in range(special_chars_count):
         password.append(secrets.choice(special_chars))
-
+        
+    # if the total count is lower than the length, add random characters to make it equal
+    if overall_count < length:
+        secrets.SystemRandom().shuffle(all)
+        for i in range(length - overall_count):
+            password.append(secrets.choice(all))
+            
     # Using the secrets.SystemRandom class, we can use all the functions of a random module
     secrets.SystemRandom().shuffle(password)
     # printing the password
     print("".join(password))
 
 # Calling the function
-gen_randon_password()
+gen_random_password()
