@@ -2,6 +2,7 @@
 #Example:
 #"camelCasing"  =>  "camel Casing"
 #"identifier"   =>  "identifier"
+#"helloWorld"   => "hello World")
 #""             =>  ""
 
 import re
