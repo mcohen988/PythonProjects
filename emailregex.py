@@ -5,10 +5,10 @@ valid = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 def check(email):
     
     if(re.search(valid, email)):
-        return "Valid email"
+        print(email + " is valid")
 
     else:
-        return "Invalid Email"
+        print(email + " is invalid")
  
  
 # Testing the code
@@ -33,9 +33,9 @@ emails = [
     "MOSHE.J@GMAIL.COM",
     "MOSHE-J@your-earth.uk",
     "david@walla.co.uk",
-    "no-reply@test.com"
+    "no-reply@test.com",
+    "no+reply@test.co.il"
 ]
 
 for email in emails:
-    print(check(email))
-    
+    check(email)
