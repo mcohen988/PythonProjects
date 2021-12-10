@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Moshe Johary</h1>
 <h3 align="center">A passionate learner from Israel</h3>
 
-- 🌱 I’m currently learning Assembly, C++, Python
+- 🌱 I’m currently learning Assembly, C, Python
 
 - 👀 I’m interested in Malware analysis, penteration testing, reverse engineering
 
