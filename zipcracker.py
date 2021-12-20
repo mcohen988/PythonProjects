@@ -1,3 +1,4 @@
+import multiprocessing
 import zipfile
 
 # Attempting to extract the contents
@@ -21,6 +22,8 @@ def main():
             zfile.printdir()
             break
 
-
 if __name__ == '__main__':
-    main()
+    pool = multiprocessing.Pool()
+    pool.apply_async(main())
+    pool.close()
+    pool.join()
